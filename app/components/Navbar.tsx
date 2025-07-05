@@ -30,6 +30,12 @@ export function Navbar() {
             >
               Monthly Raffle
             </Link>
+            <Link 
+              href="#contact" 
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Contact
+            </Link>
             <ThemeToggle />
           </div>
         </div>

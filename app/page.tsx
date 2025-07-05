@@ -4,14 +4,14 @@ export default function Home() {
   return (
     <div className="space-y-8">
       {/* Hero Section */}
-      <section className="text-center py-12 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-700 dark:to-purple-800 text-white rounded-lg p-6">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Crunch Fitness Workshop</h1>
-        <p className="text-xl opacity-90">Empowering your fitness journey with knowledge and community</p>
+      <section className="text-center py-8 sm:py-12 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-700 dark:to-purple-800 text-white rounded-lg p-4 sm:p-6">
+        <h1 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Welcome to Crunch Fitness Workshop</h1>
+        <p className="text-base sm:text-xl opacity-90">Empowering your fitness journey with knowledge and community</p>
       </section>
 
       {/* Workshops Section */}
       <section id="workshops" className="space-y-6">
-        <h2 className="text-3xl font-bold text-center text-blue-600 dark:text-blue-400">Workshop Overview</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-blue-600 dark:text-blue-400 mb-6">Workshop Overview</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card title="📅 When & Where">
             <p className="mb-2">Saturdays, 12 PM - 2 PM</p>
@@ -153,6 +153,95 @@ export default function Home() {
             </div>
           </div>
         </Card>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="mt-16 bg-gray-50 dark:bg-gray-800 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-blue-600 dark:text-blue-400 mb-8">
+            Visit Us
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Contact Information */}
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Contact Information</h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-medium text-gray-700 dark:text-gray-300">Gym Location</h4>
+                  <p className="mt-1 text-gray-600 dark:text-gray-400">
+                    <a 
+                      href="https://www.google.com/maps/place/7960+Limonite+Ave,+Riverside,+CA+92509" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      7960 Limonite Ave<br />
+                      Riverside, CA 92509
+                    </a>
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-medium text-gray-700 dark:text-gray-300">Gym Phone</h4>
+                  <p className="mt-1">
+                    <a 
+                      href="tel:+19519347007" 
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      (951) 934-7007
+                    </a>
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-medium text-gray-700 dark:text-gray-300">Mateo (Trainer)</h4>
+                  <p className="mt-1">
+                    <a 
+                      href="tel:+19513772324" 
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      (951) 377-2324
+                    </a>
+                  </p>
+                </div>
+                
+                <div className="pt-4">
+                  <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Hours</h4>
+                  <dl className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                    <div className="flex justify-between">
+                      <dt>Monday - Friday</dt>
+                      <dd>5:00 AM - 11:00 PM</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt>Saturday</dt>
+                      <dd>7:00 AM - 9:00 PM</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt>Sunday</dt>
+                      <dd>7:00 AM - 9:00 PM</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            
+            {/* Map */}
+            <div className="h-96 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.162112712753!2d-117.47322432366813!3d33.99697727312991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db2f3e8b2c6a31%3A0x3e2f2a6e8b9b6b1f!2s7960%20Limonite%20Ave%2C%20Riverside%2C%20CA%2092509!5e0!3m2!1sen!2sus!4v1622840000000!5m2!1sen!2sus" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy"
+                className="w-full h-full"
+                title="Gym Location"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
