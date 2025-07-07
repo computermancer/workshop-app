@@ -5,13 +5,13 @@ export default function Home() {
     <div className="space-y-8">
       {/* Hero Section */}
       <section className="text-center py-8 sm:py-12 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-700 dark:to-purple-800 text-white rounded-lg p-4 sm:p-6">
-        <h1 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Welcome to Crunch Fitness Workshop</h1>
+        <h1 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Crunch Fitness Workshop</h1>
         <p className="text-base sm:text-xl opacity-90">Empowering your fitness journey with knowledge and community</p>
       </section>
 
       {/* Workshops Section */}
       <section id="workshops" className="space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center text-blue-600 dark:text-blue-400 mb-6">Workshop Overview</h2>
+        {/* <h2 className="text-2xl sm:text-3xl font-bold text-center text-blue-600 dark:text-blue-400 mb-6">Workshop Overview</h2> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card title="📅 When & Where">
             <p className="mb-2">Saturdays, 12:00 PM - 1:30 PM</p>
