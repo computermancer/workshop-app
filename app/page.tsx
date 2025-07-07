@@ -212,19 +212,19 @@ export default function Home() {
               <div>
                 <div className="space-y-2">
                   <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
-                    <span className="font-medium">Monday - Wednesday</span>
+                    <span className="font-medium">Mon - Wed</span>
                     <span>5:00 AM - 11:00 PM</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
-                    <span className="font-medium">Thursday</span>
+                    <span className="font-medium">Thu</span>
                     <span>5:00 AM - 9:00 PM</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
-                    <span className="font-medium">Friday</span>
+                    <span className="font-medium">Fri</span>
                     <span>5:00 AM - 11:00 PM</span>
                   </div>
                   <div className="flex justify-between py-2">
-                    <span className="font-medium">Saturday - Sunday</span>
+                    <span className="font-medium">Sat - Sun</span>
                     <span>7:00 AM - 7:00 PM</span>
                   </div>
                 </div>

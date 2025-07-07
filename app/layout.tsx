@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./theme-provider";
-import { Navbar } from "./components/Navbar";
 import { Analytics } from "./components/Analytics";
 
 const inter = Inter({
@@ -42,7 +41,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
           <main className="container mx-auto py-4 sm:py-8 px-3 sm:px-4 max-w-7xl">
             {children}
             <Analytics />
