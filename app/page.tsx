@@ -93,7 +93,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mb-6 text-5xl">🎁</div>
               <h3 className="text-2xl font-bold mb-4">How to Enter:</h3>
-              <p className="mb-6">Attend any workshop and sign in to receive one raffle entry per session.</p>
+              <p className="mb-6">Attend any workshop and sign in to receive a raffle entry.</p>
               
               <div className="bg-gradient-to-r from-orange-100 to-yellow-100 dark:from-orange-900/20 dark:to-yellow-900/20 p-6 rounded-lg mb-6">
                 <h4 className="text-xl font-bold mb-2">Grand Prize:</h4>
@@ -101,7 +101,7 @@ export default function Home() {
                 <p className="text-lg">+ Free Crunch Kickoff consultation</p>
               </div>
               
-              <p className="text-sm text-gray-600 dark:text-gray-400">Winner announced at the end of each month. Must be present to win.</p>
+              {/* <p className="text-sm text-gray-600 dark:text-gray-400">Winner announced at the end of each month. Must be present to win.</p> */}
             </div>
           </Card>
         </div>
